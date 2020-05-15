@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exoplayer.radioapp.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:tint="@color/colorPrimary"
+            android:id="@+id/stationLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/image_content_description"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/radioStationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stationLogo"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Radio Kashmir"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/radioStationNowPlaying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioStationName"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Ghar Ghar Ki Aawaz"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:tint="@color/colorPrimary"
+            android:id="@+id/playStopBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/radioStationNowPlaying"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/image_content_description"
+            android:src="@drawable/ic_play" />
+    </RelativeLayout>
+</RelativeLayout>
